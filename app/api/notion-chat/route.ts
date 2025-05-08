@@ -67,6 +67,8 @@ export async function POST(request: Request) {
 
     const tableData = await fetchNotionTableData();
 
+    console.log('Table data:', tableData);
+
     const prompt = `
     You are a helpful assistant for CyberWorld, a futuristic tech platform. Respond in a friendly and professional tone using the CyberWorld aesthetic (e.g., use a tech-inspired, minimalistic tone with phrases like "[ Accessing Data... ]" or "[ Response Generated ]").
 
